@@ -1,0 +1,105 @@
+.container {
+    position: relative;
+    width: 100px;
+    height: 80px;
+   
+    
+  }
+  
+  .margin{
+    margin-left: 500px;
+  }
+  .image-container {
+    position: absolute;
+    bottom:-930px;
+ 
+    padding: 6px 6px;
+
+    
+   
+  }
+
+
+  .image-container2 {
+    position: absolute;
+    bottom:-570px;
+ 
+
+    
+   
+  }
+ 
+
+
+  @keyframes swing {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+
+}
+
+/* Aplica la animación */
+.swing-animation {
+    animation: swing 2s ease-in-out infinite;
+}
+
+
+  .image-container3 {
+    position: absolute;
+    bottom:-370px;
+ 
+
+    
+   
+  }
+
+
+  @keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+  
+  .imagen-pop {
+    animation: pop 0.5s ease;
+  }
+  
+  img {
+    width: 200px; /* ajusta el tamaño de acuerdo a tu imagen */
+  }
+  
+  .buttons {
+    position: absolute;
+   
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+
+
+  .fondo {
+  
+    /* Estilos CSS */
+   
+    background-image: url("../public/img/back2.png"); /* Ruta relativa a la carpeta public */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative; /* Añadir posición relativa */
+    overflow-y: scroll; /* Cambio de overflowY a overflow-y */
+   
+  }
+  
+  
+  
